@@ -3,8 +3,11 @@ module.exports = {
         [
             '@vue/cli-plugin-babel/preset',
             {
-                corejs: {version: 3}
+                corejs: {version: 3, proposals: true}
             }
         ]
+    ],
+    plugins: [
+        '@babel/plugin-proposal-optional-chaining'
     ]
 };
